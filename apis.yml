@@ -1,0 +1,58 @@
+aid: plooto
+url: https://raw.githubusercontent.com/api-evangelist/plooto/refs/heads/main/apis.yml
+name: Plooto
+kind: company
+description: >-
+  Plooto is a Toronto-based payments automation company (founded 2015 by Hamed
+  Abbasi and Serguei Kloubkov) that helps small and medium businesses and
+  accounting firms automate domestic and international accounts payable and
+  accounts receivable. Its cloud platform unifies bill pay, approval workflows,
+  supplier and customer payments, reconciliation, and reporting across Canadian
+  EFT, US ACH, credit card, and cross-border rails, syncing two-way with
+  QuickBooks Online, Xero, and NetSuite. Plooto is a licensed money services
+  business in its home market of Canada, working with Tier 1 banks and
+  processing partners. Its posture is integration-led rather than
+  API-platform-led: money movement runs on a first-party backend gateway
+  (api.plooto.com) that powers the app and its accounting connectors, but Plooto
+  does not publish a public, self-serve developer portal, downloadable
+  OpenAPI/Swagger specification, or public API reference. Partner and embedded
+  access is arranged through a gated partner onboarding process, not open
+  developer sign-up.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Payments
+- Canada
+- Accounts Payable
+- Accounts Receivable
+- AP Automation
+- AR Automation
+- Bill Pay
+- Money Transfer
+- EFT
+- ACH
+- Cross-Border
+- SMB
+created: '2026-07-24'
+modified: '2026-07-24'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.plooto.com/
+- type: Blog
+  url: https://www.plooto.com/blog
+- type: HelpCenter
+  url: https://plooto.my.site.com/support/
+- type: Pricing
+  url: https://www.plooto.com/pricing
+- type: Security
+  url: https://www.plooto.com/plooto-security
+- type: TermsOfService
+  url: https://www.plooto.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.plooto.com/privacy-policy
+- type: LinkedIn
+  url: https://ca.linkedin.com/company/plooto
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

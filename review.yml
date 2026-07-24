@@ -1,0 +1,130 @@
+aid: plooto
+name: Plooto
+review:
+  question: Does Plooto publish a public, self-serve developer API with documentation and a downloadable OpenAPI/Swagger specification?
+  answer: false
+  date: '2026-07-24'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Plooto is a Toronto-based (325 Front Street West), Canadian payments
+    automation company founded in 2015 (Hamed Abbasi, Serguei Kloubkov),
+    serving small and medium businesses and accounting firms with domestic
+    and international accounts payable and accounts receivable automation over
+    Canadian EFT, US ACH, credit card, and cross-border rails. Its home market
+    is Canada, where it operates as a licensed money services business working
+    with Tier 1 banks and processing partners.
+
+    Plooto's public posture is INTEGRATION-LED, not API-PLATFORM-LED. A real
+    first-party backend gateway exists at https://api.plooto.com (root returns
+    HTTP 204; unknown paths return structured JSON errors with x-via: api and
+    x-plooto-id headers, indicating an internal API management layer that powers
+    the Plooto app and its accounting connectors). However, this is NOT a
+    documented, self-serve public developer API. As of the review date there is:
+      - NO live public developer portal. developer.plooto.com and
+        docs.plooto.com do not resolve (DNS/no answer). All www.plooto.com
+        developer-style paths (/developers, /docs, /api, /api-reference) return
+        HTTP 403 behind a Cloudflare bot wall, the same wall the site root
+        returns, so none is a confirmed developer page. The api.plooto.com
+        gateway's own error body references documentation at
+        https://support.plooto.co/docs and support at https://support.plooto.co/,
+        but that host returns HTTP 530 (Cloudflare origin unreachable) — a dead
+        reference, not a live docs site.
+      - NO downloadable OpenAPI/Swagger. Probes against the gateway for
+        /openapi.json, /swagger.json, /v1/openapi.json, /api-docs,
+        /swagger/index.html, and /docs all return HTTP 404 JSON, never a spec.
+        No first-party spec was harvested; zero saved to openapi/.
+      - NO public auth discovery. /.well-known/openid-configuration and
+        /.well-known/oauth-authorization-server on api.plooto.com return HTTP
+        404. The gateway is a first-party token/session-secured backend; no
+        public OAuth or API-key scheme is documented for third-party developers.
+      - NO first-party public Postman collection, GraphQL, gRPC/.proto, or
+        AsyncAPI was found.
+    Third-party aggregator listings (e.g. apitracker.io / Apideck) advertise
+    "OpenAPI, SDKs, webhooks, sandbox, API reference" for Plooto, but these are
+    aggregator/connector metadata (Apideck ships a unified-API Plooto connector);
+    no first-party Plooto-published specification or public developer reference
+    was located to substantiate them, so they are NOT trusted here.
+    github.com/plooto is a squatted personal account with no repositories, not
+    the company's organization, and is excluded.
+
+    Plooto's actual, verifiable integration surface for outside builders is its
+    pre-built two-way accounting connectors (QuickBooks Online, Xero, NetSuite)
+    plus a gated partner onboarding process (https://www.plooto.com/onboarding).
+    Recorded as built-stub: honest company identity captured; no public
+    self-serve API or documentation to harvest.
+  transports:
+  - protocol: REST
+    scheme: https
+    baseURL: https://api.plooto.com
+    documented: false
+    note: >-
+      First-party backend gateway that powers the Plooto app and accounting
+      connectors. Live (root 204; JSON error envelopes), but not publicly
+      documented for third-party self-serve developers.
+  - protocol: WebSocket
+    scheme: wss
+    documented: false
+    note: No WebSocket surface is documented.
+  - protocol: GraphQL
+    documented: false
+    note: No public GraphQL endpoint or SDL was found.
+  probes:
+  - url: https://api.plooto.com/
+    status: 204
+    note: Live gateway root, empty body.
+  - url: https://api.plooto.com/openapi.json
+    status: 404
+  - url: https://api.plooto.com/swagger.json
+    status: 404
+  - url: https://api.plooto.com/v1/openapi.json
+    status: 404
+  - url: https://api.plooto.com/api-docs
+    status: 404
+  - url: https://api.plooto.com/.well-known/openid-configuration
+    status: 404
+    note: JSON error body references https://support.plooto.co/docs (dead, 530).
+  - url: https://support.plooto.co/docs
+    status: 530
+    note: Cloudflare origin unreachable; referenced docs host is not live.
+  - url: https://developer.plooto.com/
+    status: 0
+    note: Does not resolve.
+  - url: https://docs.plooto.com/
+    status: 0
+    note: Does not resolve.
+  - url: https://www.plooto.com/developers
+    status: 403
+    note: Cloudflare bot wall; same 403 as site root, not a confirmed developer page.
+  - url: https://www.plooto.com/
+    status: 403
+    note: Cloudflare bot wall to automated clients; site is live in a browser.
+  - url: https://github.com/plooto
+    status: 200
+    note: Squatted personal account (Connor Chin-Hing, 0 repos), NOT the company org. Excluded.
+sources:
+- url: https://api.plooto.com/
+  type: APIGateway
+  note: First-party backend gateway; live but undocumented for public developers.
+- url: https://www.plooto.com/
+  type: Website
+- url: https://www.plooto.com/integrations
+  type: Integrations
+  note: QuickBooks Online, Xero, NetSuite two-way AP/AR sync — the real integration surface.
+- url: https://www.plooto.com/onboarding
+  type: PartnerOnboarding
+  note: Gated partner onboarding; the path for embedded/partner access rather than self-serve API sign-up.
+- url: https://www.plooto.com/plooto-security
+  type: Security
+- url: https://plooto.my.site.com/support/
+  type: HelpCenter
+- url: https://apitracker.io/a/plooto
+  type: Aggregator
+  note: Third-party listing claims OpenAPI/webhooks/sandbox; unverified by any first-party spec. Not trusted.
+actions:
+  openapiHarvested: false
+  specsSaved: 0
+  reason: >-
+    No first-party public developer portal, API reference, or downloadable
+    OpenAPI/Swagger specification exists. Backend gateway is live but
+    undocumented and gated. Captured as built-stub (identity only).
