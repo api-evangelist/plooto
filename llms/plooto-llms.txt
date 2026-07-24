@@ -1,0 +1,67 @@
+# Plooto
+
+> Plooto is a Canadian cloud-based platform that automates accounts payable (AP) and accounts receivable (AR) for small and medium-sized businesses (SMBs) and the accounting firms that serve them. Trusted by 14,000+ businesses across Canada and the United States, Plooto processes payments via EFT, ACH, credit card, check, and international transfer — with deep two-way sync to QuickBooks, Xero, and Oracle NetSuite for automatic reconciliation. Headquartered in Toronto, Canada.
+
+Plooto was founded in 2015 by Hamed Abbasi and Serguei Kloubkov after experiencing firsthand the frustrations of B2B payments and cash flow management while running their previous company, Vast Studios (acquired 2014). The company is led by CEO John McLane. Plooto is SOC II and ISO 27001 certified, hosted on Microsoft Azure, and operates as a licensed money transmission business in Canada.
+
+Plooto serves two primary audiences: (1) SMBs with 25–60 employees who need to automate payment workflows, gain cash flow visibility, and eliminate manual processes like check writing and data entry; and (2) accounting and bookkeeping firms who manage AP/AR for multiple clients from a single centralized dashboard. Industries served include construction, healthcare, professional services, financial services, retail, and non-profits.
+
+## Core Products
+
+- [Accounts Payable Automation](https://www.plooto.com/product/accounts-payable-automation-software): End-to-end bill payment automation with Plooto Capture (OCR invoice scanning), customizable multi-level approval workflows, payment scheduling, batch payments, full audit trails, and automatic two-way reconciliation with accounting software.
+- [Accounts Receivable Automation](https://www.plooto.com/product/accounts-receivable-automation-software): Invoice creation, automated payment collection via pre-authorized debits (PADs), credit card acceptance (Visa, Mastercard, Amex) with 2-business-day settlement, recurring payments, automated reminders, and real-time invoice status tracking.
+- [International Payments](https://www.plooto.com/features/international-business-payments): Send payments to 40+ countries in 25+ currencies via Global ACH with competitive exchange rates. No foreign exchange transfer fees. Cross-border flat fee of $10 (Grow/Pro) or $19 (Go plan).
+- [Pay by Card](https://www.plooto.com/features/pay-by-card): Pay vendors using a commercial credit card while vendors receive payment via EFT, ACH, or check. Enables businesses to earn card rewards, capitalize on early-payment discounts, and defer cash outflow.
+- [Plooto Instant](https://www.plooto.com/features/instant-payments): Pre-funded virtual wallet that accelerates payment processing to 1–2 business days in both USD and CAD, at no additional transaction cost.
+- [Online Check Payments](https://www.plooto.com/features/accept-check-payments-online): Full-service digital check payments across Canada and the United States. Plooto handles printing and mailing — no in-person signatures or bank visits required.
+- [CRA Tax Payments](https://www.plooto.com/features/online-cra-payments): Automate remittances to the Canada Revenue Agency including payroll deductions, corporate tax (T2), and GST/HST — from anywhere, for $3.00 per payment.
+- [Invoice Management](https://www.plooto.com/features/invoice-management-software): OCR-powered invoice capture (Plooto Capture), automated invoice processing, recurring invoice scheduling, and real-time tracking of payment statuses.
+
+## Integrations
+
+- [QuickBooks Online Integration](https://www.plooto.com/integrations): Deep two-way sync that automatically imports bills, reconciles payments, and maintains a complete audit trail. Available on all plans. Also supports QuickBooks Desktop.
+- [Xero Integration](https://www.plooto.com/integrations): Two-way sync for bill import, payment tracking, and automatic reconciliation. Available on all plans.
+- [Oracle NetSuite Integration](https://www.plooto.com/integrations): Two-way sync for enterprise-level accounting automation. Available as a Pro plan add-on.
+
+## Solutions by Audience
+
+- [Small Businesses](https://www.plooto.com/solutions/small-businesses): Automate AP and AR workflows, gain cash flow visibility, eliminate manual data entry, and integrate with existing accounting software.
+- [Accountants & Bookkeepers](https://www.plooto.com/solutions/accountants-bookkeepers): Manage AP for an entire book of business from a single dashboard with customizable per-client workflows, approval controls, dual controls, and automatic reconciliation. Firms with 3+ active clients on Grow or Pro plans get a free firm subscription.
+- [Partner Program](https://www.plooto.com/partner-program/lp): Rewards program for accounting firms with tiered recognition, partner directory listing for SMB discovery, waived firm subscriptions and ACH fees, and resources for offering payment advisory services.
+
+## Solutions by Industry
+
+- [Construction](https://www.plooto.com/solutions/industry/construction): AP/AR automation for homebuilders and general contractors with Prompt Payment compliance support.
+- [Healthcare](https://www.plooto.com/solutions/industry/healthcare): Payment automation for medical practices with audit trails and compliance features.
+- [Professional Services](https://www.plooto.com/solutions/industry/professional-services): Billing automation for consultants, law firms, and project-based teams.
+- [Financial Services & Insurance](https://www.plooto.com/solutions/industry/financial-and-insurance): AP/AR automation with security standards suited for regulated industries.
+- [Retail & E-commerce](https://www.plooto.com/solutions/industry/retail-and-ecommerce): Automated vendor payments and inventory-related cash flow management.
+- [Non-Profits](https://www.plooto.com/solutions/industry/non-profits): Streamlined payment processing for organizations with complex approval requirements and tight budgets.
+
+## Pricing
+
+- [Pricing & Plans](https://www.plooto.com/pricing): Tiered subscription model with a 30-day free trial (includes 10 free domestic transactions, no credit card required). Go plan at $9/month (5 domestic transactions at $1.00 each, 1 approver). Grow plan at $32/month (unlimited approvers, domestic transactions at $0.50 each). Grow Unlimited at $59/month (unlimited free domestic transactions). Pro plan at $499/month (all Grow features plus SSO, priority support, and NetSuite integration). International payments at $9.99 (Grow/Pro). Check payments at $1.99. CRA payments at $3.00. Credit card acceptance at approximately 2.9% + $0.30. Pay by Card at 2.9% service fee. Optional discounted payment package add-ons available (50, 100, or 250 transactions).
+
+## Trust & Security
+
+- [Security](https://www.plooto.com/plooto-security): SOC II certified. ISO 27001 certified. Hosted on Microsoft Azure with end-to-end TLS/SSL encryption. All data encrypted in transit and at rest. Multi-factor authentication (MFA). Licensed money transmission business in Canada operating with Tier 1 bank partners. Cyber insurance coverage including financial crime and theft protection. 99.99% platform uptime.
+
+## Company
+
+- [About Plooto](https://www.plooto.com/about-plooto): Founded in Toronto in 2015. Serves 14,000+ businesses. Processes payments across Canada and the United States. Remote-first work policy.
+- [Why Plooto](https://www.plooto.com/why-plooto-for-payment-processing): Founded to solve SMB payment challenges that banks ignored. Vision to automate and simplify complex financial workflows.
+- [Contact](https://www.plooto.com/contact): Live chat via Plooto account, email support, phone support. Dedicated adoption team for onboarding.
+- [Blog](https://www.plooto.com/blog): Guides and insights on AP/AR automation, cash flow management, CRA payments, and Canadian SMB financial operations.
+- [Resource Videos](https://www.plooto.com/resources/videos): Product demos, how-to walkthroughs, and webinars covering AP, AR, international payments, CRA, approvals, and integrations.
+- [Help Center](https://www.plooto.com/support): Product documentation, setup guides, and troubleshooting.
+
+## Optional
+
+- [Product Overview](https://www.plooto.com/product): High-level overview of all Plooto capabilities with a guided product tour and onboarding steps.
+- [Startups](https://www.plooto.com/plooto-for-start-ups): How Plooto simplifies payments for early-stage businesses with competitive rates and accounting integrations.
+- [Partner Onboarding](https://www.plooto.com/onboarding): Guided onboarding portal for accounting firm partners.
+- [Sign Up](https://www.plooto.com/signup): Create a free account with a 30-day free trial. No credit card required.
+
+## Last Updated
+
+2026-04-29

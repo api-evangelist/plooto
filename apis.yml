@@ -33,10 +33,12 @@ tags:
 - Cross-Border
 - SMB
 created: '2026-07-24'
-modified: '2026-07-24'
+modified: '2026-07-24T15:05:00Z'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/plooto-domain-security.yml
 - type: Website
   url: https://www.plooto.com/
 - type: Blog
@@ -47,6 +49,14 @@ common:
   url: https://www.plooto.com/pricing
 - type: Security
   url: https://www.plooto.com/plooto-security
+- type: Compliance
+  url: https://www.plooto.com/plooto-security
+- type: GettingStarted
+  url: https://www.plooto.com/product
+- type: Login
+  url: https://app.plooto.com/
+- type: LLMsTxt
+  url: llms/plooto-llms.txt
 - type: TermsOfService
   url: https://www.plooto.com/terms-and-conditions
 - type: PrivacyPolicy
