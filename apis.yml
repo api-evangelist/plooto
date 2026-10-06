@@ -69,10 +69,12 @@ tags_raw:
 - Cross-Border
 - SMB
 created: '2026-07-24'
-modified: '2026-07-24T15:05:00Z'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+- url: https://www.plooto.com/blog/rss.xml
+  type: BlogRSS
 - type: DomainSecurity
   url: security/plooto-domain-security.yml
 - type: Website
