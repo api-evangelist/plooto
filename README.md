@@ -1,4 +1,4 @@
-# Plooto (plooto)
+# Plooto
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,59 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Plooto is a Toronto-based payments automation company (founded 2015 by Hamed Abbasi and Serguei Kloubkov) that helps small and medium businesses and accounting firms automate domestic and international accounts payable and accounts receivable. Its cloud platform unifies bill pay, approval workflows, supplier and customer payments, reconciliation, and reporting across Canadian EFT, US ACH, credit card, and cross-border rails, syncing two-way with QuickBooks Online, Xero, and NetSuite. Plooto is a licensed money services business in its home market of Canada, working with Tier 1 banks and processing partners.
+Plooto is a Toronto-based payments automation company (founded 2015 by Hamed Abbasi and Serguei Kloubkov) that helps small and medium businesses and accounting firms automate domestic and international accounts payable and accounts receivable. Its cloud platform unifies bill pay, approval workflows, supplier and customer payments, reconciliation, and reporting across Canadian EFT, US ACH, credit card, and cross-border rails, syncing two-way with QuickBooks Online, Xero, and NetSuite. Plooto is a licensed money services business in its home market of Canada, working with Tier 1 banks and processing partners. Its posture is integration-led rather than API-platform-led: money movement runs on a first-party backend gateway (api.plooto.com) that powers the app and its accounting connectors, but Plooto does not publish a public, self-serve developer portal, downloadable OpenAPI/Swagger specification, or public API reference. Partner and embedded access is arranged through a gated partner onboarding process, not open developer sign-up.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/plooto/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/plooto/refs/heads/main/apis.yml)
+**Areas:** Payments · Canada · Accounts Payable · Accounts Receivable · AP Automation · AR Automation · Bill Pay · Money Transfer · EFT · ACH · Cross-Border · Small Business
 
-## API Posture (honest)
+## Plooto on APIs.io
 
-Plooto is **integration-led, not API-platform-led**. A real first-party backend gateway exists at `https://api.plooto.com` (its root returns HTTP 204 and unknown paths return structured JSON errors) that powers the Plooto app and its accounting connectors — but Plooto does **not** publish a public, self-serve developer portal, downloadable OpenAPI/Swagger specification, or public API reference.
+Everything profiled for Plooto is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/plooto/](https://apis.io/providers/plooto/)** — or go straight to one of the APIs or properties below.
 
-- No live developer portal — `developer.plooto.com` / `docs.plooto.com` do not resolve; `www.plooto.com` developer paths sit behind a Cloudflare bot wall (403); the gateway's own referenced docs host `support.plooto.co/docs` returns 530 (dead).
-- No downloadable OpenAPI/Swagger — every spec probe against the gateway returned 404. Zero specs harvested.
-- No public auth discovery — `/.well-known/openid-configuration` and `/.well-known/oauth-authorization-server` return 404.
-- No first-party public Postman collection, GraphQL, gRPC, or AsyncAPI was found.
+### Published properties
 
-Plooto's verifiable integration surface for outside builders is its pre-built two-way accounting connectors (QuickBooks Online, Xero, NetSuite) plus a **gated partner onboarding** process. Third-party aggregators (Apideck / API Tracker) advertise "OpenAPI/webhooks/sandbox" for Plooto, but no first-party specification substantiates them, so they are not trusted here.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-See [`review.yml`](review.yml) for the full reviewer findings and probe log.
+#### Security (1)
 
-## Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- Payments
-- Canada
-- Accounts Payable
-- Accounts Receivable
-- AP Automation
-- AR Automation
-- Bill Pay
-- Money Transfer
-- EFT
-- ACH
-- Cross-Border
-- SMB
+- [Plooto Domain Security](https://apis.io/security/plooto/plooto-domain-security/)
 
-## Timestamps
+## Where to find this API
 
-- **Created:** 2026-07-24
-- **Modified:** 2026-07-24
-
-## APIs
-
-No public, self-serve, documented API is available. See the API Posture section above.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.plooto.com/)
-- [Blog](https://www.plooto.com/blog)
-- [Help Center](https://plooto.my.site.com/support/)
+- [Getting started](https://www.plooto.com/product)
 - [Pricing](https://www.plooto.com/pricing)
+- [Blog](https://www.plooto.com/blog)
 - [Security](https://www.plooto.com/plooto-security)
-- [Terms of Service](https://www.plooto.com/terms-and-conditions)
-- [Privacy Policy](https://www.plooto.com/privacy-policy)
-- [LinkedIn](https://ca.linkedin.com/company/plooto)
+- [Compliance](https://www.plooto.com/plooto-security)
+- [Terms of service](https://www.plooto.com/terms-and-conditions)
+- [Privacy policy](https://www.plooto.com/privacy-policy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 19.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 46.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.0** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/plooto/](https://apis.io/providers/plooto/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Plooto: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/plooto/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
